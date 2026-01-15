@@ -10,3 +10,21 @@ h3 {
 p {
     color: purple;
 }
+
+/* 1° comentário */
+/* 2° comentário */
+/* 3° comentário */
+
+/* classes */
+.paragraph {
+    background-color: #000;
+    color: aqua;
+    padding: 5px;
+}
+
+/* ids */
+#exclusive-title {
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
