@@ -28,3 +28,16 @@ p {
     color: yellow;
     padding: 10px;
 }
+
+/* ordem das regras */
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.título {
+    border-bottom: 3px solid blue;
+}
+
+#outro-titulo {
+    border-bottom: 4px solid green;
+}
