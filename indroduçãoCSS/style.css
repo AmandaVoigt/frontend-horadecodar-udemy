@@ -87,3 +87,14 @@ h2 {
 .hsl-2 {
     color: hsl(201, 44%, 10%)
 }
+
+/* Background */
+.bg {
+    background-color: #000;
+    color: yellow;
+}
+
+.bg-1 {
+    background-color: rgb(200, 20, 40);
+    color: #00eaff;
+}
