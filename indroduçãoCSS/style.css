@@ -1,4 +1,4 @@
-/* 4 - External */
+/* 4 - external */
 body {
     padding-bottom: 500px;
 }
@@ -40,4 +40,50 @@ h2 {
 
 #outro-titulo {
     border-bottom: 4px solid green;
+}
+
+/* nome de cores */
+.color-name {
+    color: crimson;
+}
+
+/* hex */
+.hex {
+    color: #55a398;
+}
+
+.hex-2 {
+    color: rgb(134, 206, 18);
+}
+
+/* aprofundando em hex */
+.simple-hex-1 {
+    color: #333;
+}
+
+.simple-hex-2 {
+    color: #a5f;
+}
+
+/* RGB */
+.rgb {
+    color: rgb(255, 0, 0);
+}
+
+.mixed-rgb {
+    color: rgb(199, 21, 47);
+}
+
+/* RGBA */
+.rgba {
+    color: rgba(100, 199, 45, 0.3);
+}
+
+/* HSL */
+.hsl-1 {
+    color: hsl(100, 20%, 50%)
+}
+
+.hsl-2 {
+    color: hsl(201, 44%, 10%)
 }
