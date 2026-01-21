@@ -315,3 +315,29 @@ h2 {
 .lower {
     text-transform: lowercase;
 }
+
+/* Espaçamento entre letras */
+.spacing {
+    letter-spacing: 5px;
+}
+
+/* fontes */
+.serif {
+    font-family: Georgia;
+}
+
+.sans-serif {
+    font-family: Helvetica;
+}
+
+.monospace {
+    font-family: "Courier New";
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
