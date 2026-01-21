@@ -281,3 +281,28 @@ h2 {
     color: #FFF;
     border: none;
 }
+
+/* Alinhamento de texto */
+.text-aligned {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    width: 300px;
+    border: 1px solid darkorange;
+}
+
+/* Decorando texto */
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+    color: #700808;
+}
