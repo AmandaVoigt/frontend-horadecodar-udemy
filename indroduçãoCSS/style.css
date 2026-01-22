@@ -456,3 +456,14 @@ h2 {
     bottom: 10px;
     right: 10px;
 }
+
+/* Posição fixa */
+.fixed {
+    width: 100px;
+    height: 100px;
+    background-color: #a5f;
+    border: 1px solid rgb(102, 0, 85);
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
