@@ -429,3 +429,30 @@ h2 {
     top: 2px;
     right: 2px;
 }
+
+/* Relativa com absoluta */
+.relative-countainer {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-1,
+.absolute-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #4b0303;
+    position: absolute;
+}
+
+.absolute-1 {
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-2 {
+    bottom: 10px;
+    right: 10px;
+}
