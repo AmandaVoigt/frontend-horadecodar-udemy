@@ -398,3 +398,34 @@ h2 {
 .invisible {
     display: none;
 }
+
+/* Posição estática */
+.static {
+    position: static;
+    background-color: #a34242;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+}
+
+/* Posição relativa */
+.relative {
+    position: relative;
+    background-color: #700808;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 40px;
+}
+
+/* Posição absoluta */
+.absolute {
+    position: absolute;
+    background-color: #4b0303;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
