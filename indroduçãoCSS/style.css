@@ -467,3 +467,13 @@ h2 {
     top: 50px;
     right: 100px;
 }
+
+/* Posição pegajosa (sticky) */
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: #00eaff;
+    border: 1px solid #154;
+    position: sticky;
+    top: 50px;
+}
