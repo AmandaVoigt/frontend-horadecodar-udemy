@@ -25,14 +25,19 @@ label {
 input {
     border: none;
     border-bottom: 1px solid #ccc;
-    padding: 10x 0;
+    padding: 10px 0;
 }
 
 input[type="text"],
 input[type="nunber"],
 input[type="date"],
-input[type="file"] {
+input[type="file"],
+textarea {
     width: 400px;
+}
+
+textarea {
+    padding: 10px 5px;
 }
 
 /* page header */
