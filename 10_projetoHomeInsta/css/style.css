@@ -67,7 +67,7 @@ body {
 }
 
 #login-form input[type="submit"] {
-    background-color: #B2dFFC;
+    background-image: linear-gradient(to right, #ff5c00, #ff0069, #d300c5);
     color: #fff;
     margin-top: 15px;
     border-radius: 5px;
