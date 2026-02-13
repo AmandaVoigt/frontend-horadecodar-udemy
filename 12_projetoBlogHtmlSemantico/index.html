@@ -1,12 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Semântico</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Teste</h1>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="navbar-inner">
+          <h2>Blog</h2>
+          <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <main id="posts-container">
+        <article class="post">
+          <img src="img/f1.jpg" alt="Passeio de barco" />
+          <h3 class="title"><a href="#">Algum título</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            placeat, suscipit consectetur error tempore voluptate dolorem fuga
+            pariatur molestias, aspernatur omnis perspiciatis corporis totam
+            nemo asperiores vel autem mollitia eveniet!
+          </p>
+          <a href="#">Ler mais</a>
+        </article>
+        <article class="post">
+          <img src="img/f2.jpg" alt="Cachoeira" />
+          <h3 class="title"><a href="#">Outro título</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            placeat, suscipit consectetur error tempore voluptate dolorem fuga
+            pariatur molestias, aspernatur omnis perspiciatis corporis totam
+            nemo asperiores vel autem mollitia eveniet!
+          </p>
+          <a href="#">Ler mais</a>
+        </article>
+        <article class="post">
+          <img src="img/f3.jpg" alt="Balões" />
+          <h3 class="title"><a href="#">Mais um blog post</a></h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            placeat, suscipit consectetur error tempore voluptate dolorem fuga
+            pariatur molestias, aspernatur omnis perspiciatis corporis totam
+            nemo asperiores vel autem mollitia eveniet!
+          </p>
+          <a href="#">Ler mais</a>
+        </article>
+      </main>
+      <aside id="sidebar"></aside>
+    </div>
+  </body>
 </html>
