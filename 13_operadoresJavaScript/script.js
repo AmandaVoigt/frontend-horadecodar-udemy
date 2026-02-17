@@ -16,3 +16,11 @@ console.log(typeof Infinity);
 console.log(typeof -Infinity);
 console.log(12 * "asd");
 console.log(typeof NaN);
+
+// string
+console.log(typeof "Um texto");
+console.log(typeof 'Mais um texto');
+
+// símbolos especiais em string
+console.log("Testando a \n quebra de linha");
+console.log("Espaçamento \t de tab");
