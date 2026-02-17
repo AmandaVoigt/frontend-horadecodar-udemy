@@ -11,16 +11,20 @@ console.log(10 / 2);
 
 console.log(5 + 4 * 2);
 
-// special numbers
+// 3 - special numbers
 console.log(typeof Infinity);
 console.log(typeof -Infinity);
 console.log(12 * "asd");
 console.log(typeof NaN);
 
-// string
+// 4 - string
 console.log(typeof "Um texto");
 console.log(typeof 'Mais um texto');
 
-// símbolos especiais em string
+// 5 - símbolos especiais em string
 console.log("Testando a \n quebra de linha");
 console.log("Espaçamento \t de tab");
+
+// 6 - concatenação
+console.log("Oi," + " tudo" + " bem?");
+console.log('Testando' + ' com' + ' crase!');
