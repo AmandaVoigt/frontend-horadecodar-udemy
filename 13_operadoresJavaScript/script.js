@@ -28,3 +28,7 @@ console.log("Espaçamento \t de tab");
 // 6 - concatenação
 console.log("Oi," + " tudo" + " bem?");
 console.log('Testando' + ' com' + ' crase!');
+
+// 7 - template strings
+console.log(`A soma de 2 + 2 é: ${2 + 2}`);
+console.log(`Podemos executar qualquer coisa aqui ${console.log("teste")}`);
