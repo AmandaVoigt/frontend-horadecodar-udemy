@@ -10,3 +10,9 @@ console.log(5 * 4);
 console.log(10 / 2);
 
 console.log(5 + 4 * 2);
+
+// special numbers
+console.log(typeof Infinity);
+console.log(typeof -Infinity);
+console.log(12 * "asd");
+console.log(typeof NaN);
