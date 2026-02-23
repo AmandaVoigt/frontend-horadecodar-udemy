@@ -49,4 +49,28 @@ console.log(Math.floor(5.14));       // arredonda o número pra baixo
 
 console.log(Math.ceil(5.14));        // arredonda o número pra cima
 
-// 6 -
+// 6 - console
+console.log("teste!");
+
+console.error("erro!");
+
+console.warn("aviso!");
+
+// 7 - if
+const m = 10;
+if (m > 5) {
+    console.log("M é maior que 5!");
+}
+
+const user = "João";
+if (user === "João") {
+    console.log("Olá João!");
+}
+
+if (user === "Maria") {
+    console.log("Olá Maria!");
+}
+
+console.log(user === "João", user === "Maria");
+
+// 8 - else
