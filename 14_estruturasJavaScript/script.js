@@ -37,7 +37,16 @@ console.log(_teste, $teste);
 // console.log(`Você tem ${age} anos.`);
 
 // 4 - alert
-alert("Testando");
+// alert("Testando");
 
-const z = 10
-alert(`O número é ${z}`);
+// const z = 10
+// alert(`O número é ${z}`);
+
+// 5 - math
+console.log(Math.max(5, 2, 1, 10));  // retorna o maior
+
+console.log(Math.floor(5.14));       // arredonda o número pra baixo
+
+console.log(Math.ceil(5.14));        // arredonda o número pra cima
+
+// 6 -
