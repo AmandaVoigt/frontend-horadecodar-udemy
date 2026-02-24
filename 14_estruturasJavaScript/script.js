@@ -121,7 +121,6 @@ while (p < 5) {
 
 // loop infinito
 // let x = 10;
-
 // while (x > 5) {
 //     console.log(`Imprimindo ${x}`);
 // }
@@ -133,3 +132,14 @@ do {
     console.log(`valor de o: ${o}`);
     o--;
 } while (o > 1);
+
+// - 12 - for
+for (let t = 0; t < 10; t++) {
+    console.log("Repetindo algo...");
+}
+
+let r = 10;
+
+for (r; r > 0; r = r - 1) {
+    console.log(`O r está diminuindo: ${r}`);
+} 
