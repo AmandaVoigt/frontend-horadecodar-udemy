@@ -120,8 +120,16 @@ while (p < 5) {
 }
 
 // loop infinito
-let x = 10;
+// let x = 10;
 
-while (x > 5) {
-    console.log(`Imprimindo ${x}`);
-}
+// while (x > 5) {
+//     console.log(`Imprimindo ${x}`);
+// }
+
+// 11 - do while
+let o = 10;
+
+do {
+    console.log(`valor de o: ${o}`);
+    o--;
+} while (o > 1);
