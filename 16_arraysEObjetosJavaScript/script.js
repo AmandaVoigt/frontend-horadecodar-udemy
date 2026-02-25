@@ -35,3 +35,33 @@ const text = "algum texto";
 console.log(text.toUpperCase());
 console.log(typeof text.toUpperCase);
 console.log(text.indexOf("g"));
+
+// 5 - objetos
+const person = {
+    name: "Amanda",
+    age: 25,
+    job: "Programadora"
+};
+
+console.log(person);
+console.log(person.name);
+console.log(person.name.length);
+console.log(typeof person);
+
+// 6 - criando e deletando propriedades
+const car = {
+    engine: 2.0,
+    brand: "Honda",
+    model: "Hr-v",
+    km: 20000,
+};
+
+console.log(car);
+
+car.doors = 4;
+
+console.log(car);
+
+delete car.km;
+
+console.log(car);
