@@ -16,10 +16,22 @@ console.log(arr[2]);
 console.log(arr[83]);
 
 // 3 - propriedades
-const numbers = [5, 2, 4,];
+const numbers = [5, 2, 4];
 
 console.log(numbers.length);
 console.log(numbers["length"]);
 
 const myName = "Amanda";
 console.log(myName.length);
+
+// 4 - métodos
+const otherNumbers = [1, 2, 3];
+
+const allNunbers = numbers.concat(otherNumbers);
+console.log(allNunbers);
+
+const text = "algum texto";
+
+console.log(text.toUpperCase());
+console.log(typeof text.toUpperCase);
+console.log(text.indexOf("g"));
