@@ -153,3 +153,32 @@ const repeatText = (text, repeat = 2) => {
 
 repeatText("Testando");
 repeatText("Agora repete 5 vezes", 5);
+
+// 9 - closure
+function someFunction() {
+    let txt = "Alguma coisa";
+
+    function display() {
+        console.log(txt);
+    }
+
+    display();
+}
+
+someFunction();
+
+// 10 - mais sobre closure
+const multiplicationClosure = (n) => {
+    return (m) => {
+        return n * m;
+    };
+};
+
+const c1 = multiplicationClosure(5);
+const c2 = multiplicationClosure(10);
+
+console.log(c1);
+console.log(c2);
+
+console.log(c1(5));
+console.log(c2(10));
