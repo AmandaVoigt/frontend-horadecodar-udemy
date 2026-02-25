@@ -110,3 +110,10 @@ delete b.age;
 
 console.log(a);
 console.log(b);
+
+// 10 - loop em arrays
+const users = ["Amanda", "Matheus", "Lion", "Agata",];
+
+for (let i = 0; i < users.length; i++) {
+    console.log(`Listando o usuário: ${users[i]}`);
+}
