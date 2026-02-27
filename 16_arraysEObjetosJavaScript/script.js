@@ -302,3 +302,22 @@ const myJson = '{"name": "Amanda", "age": 25, "skills": ["Java", "JavaScript", "
 
 console.log(myJson);
 console.log(typeof myJson);
+
+// 28 - JSON para objeto e objeto para JSON
+const myObject = JSON.parse(myJson);
+
+console.log(myObject);
+console.log(myObject.name);
+console.log(typeof myObject);
+
+// JSON inválido
+const badJson = '{"name": Amanda, "age": 25}';
+// const myBadObject = JSON.parse(badJson);
+
+
+myObject.isOpenToWork = true;
+console.log(myObject);
+
+const myNewJson = JSON.stringify(myObject);
+console.log(myNewJson);
+console.log(typeof myNewJson);
