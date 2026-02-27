@@ -1,9 +1,9 @@
 // 1 - métodos
 const animal = {
-    nome: "Bob",
-    latir: function () {
-        console.log("Au au");
-    },
+  nome: "Bob",
+  latir: function () {
+    console.log("Au au");
+  },
 };
 
 console.log(animal.nome);
@@ -11,15 +11,15 @@ animal.latir();
 
 // 2 - aprofundando em métodos
 const pessoa = {
-    nome: "Amanda",
+  nome: "Amanda",
 
-    getNome: function () {
-        return this.nome;
-    },
+  getNome: function () {
+    return this.nome;
+  },
 
-    setNome: function (novoNome) {
-        this.nome = novoNome;
-    },
+  setNome: function (novoNome) {
+    this.nome = novoNome;
+  },
 };
 
 console.log(pessoa.nome);
@@ -41,7 +41,7 @@ console.log(Object.getPrototypeOf(arr));
 
 // 4 - mais sobre prototype
 const myObject = {
-    a: "b",
+  a: "b",
 };
 
 console.log(Object.getPrototypeOf(myObject));
@@ -53,4 +53,21 @@ console.log(mySecondObject);
 console.log(mySecondObject.a);
 console.log(Object.getPrototypeOf(mySecondObject) === myObject);
 
-// 
+// 5 - classes básicas
+const cachorro = {
+  raca: null,
+  patas: 4,
+};
+
+const pastorAlemao = Object.create(cachorro);
+
+pastorAlemao.raca = "Pastor Alemão";
+
+console.log(pastorAlemao);
+console.log(pastorAlemao.patas);
+
+const bulldog = Object.create(cachorro);
+
+bulldog.raca = "Bulldog";
+
+console.log(bulldog);
