@@ -296,3 +296,9 @@ const myList = ["Avião", "Submarino", "Carro", "Trator"];
 
 const [veiculoA, veiculoB, veiculoC] = myList;
 console.log(veiculoA, veiculoB, veiculoC);
+
+// 27 - JSON
+const myJson = '{"name": "Amanda", "age": 25, "skills": ["Java", "JavaScript", "Python"]}';
+
+console.log(myJson);
+console.log(typeof myJson);
