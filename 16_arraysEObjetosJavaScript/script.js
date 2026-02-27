@@ -235,3 +235,12 @@ const frase = "o rato roeu a roupa do rei de Roma";
 const arrayDafrase = frase.split(" ");
 
 console.log(arrayDafrase);
+
+// 21 - join
+const fraseDeNovo = arrayDafrase.join(" ");
+console.log(fraseDeNovo);
+
+const itensParaComprar = ["Mouse", "Teclado", "Monitor"];
+
+const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(", ")}.`;
+console.log(fraseDeCompra);
