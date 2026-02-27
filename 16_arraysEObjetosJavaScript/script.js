@@ -262,3 +262,17 @@ const somaInfinita = (...args) => {
 
 console.log(somaInfinita(1, 2, 3));
 console.log(somaInfinita(1, 20, 34, 3424, 128812, 12723, 12, 23, 54, 12));
+
+// 24 - estrutura for of
+const somaInfinita2 = (...args) => {
+    let total = 0;
+
+    for (num of args) {
+        total += num;
+    }
+
+    return total;
+};
+
+console.log(somaInfinita2(1, 2, 3));
+console.log(somaInfinita2(1, 20, 34, 3424, 128812, 12723, 12, 23, 54, 12));
