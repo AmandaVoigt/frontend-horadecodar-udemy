@@ -72,7 +72,7 @@ bulldog.raca = "Bulldog";
 
 console.log(bulldog);
 
-//  6 - função como classe - função construtora
+//  6 - função como classe
 function criarCachoro(nome, raca) {
   const cachorro = Object.create({});
 
@@ -88,3 +88,13 @@ console.log(bob);
 const jack = criarCachoro("Jack", "Poodle");
 console.log(jack);
 console.log(Object.getPrototypeOf(jack));
+
+// 7 - funções construtoras
+function Cachorro(nome, raca) {
+  this.nome = nome;
+  this.raca = raca;
+}
+
+const husky = new Cachorro("Ozzy", "Husky");
+
+console.log(husky);
