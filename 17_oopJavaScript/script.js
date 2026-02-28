@@ -121,7 +121,7 @@ const jeff = new CachorroClasse("Jeff", "Labrador");
 console.log(jeff);
 console.log(Object.getPrototypeOf(jeff));
 
-// - mais sobre classes
+// 10 - mais sobre classes
 class Caminhao {
   constructor(eixos, cor) {
     this.eixos = eixos;
@@ -151,3 +151,21 @@ Caminhao.prototype.motor = 4.0;
 const c3 = new Caminhao(6, "Azul");
 
 console.log(c3.motor);
+
+// 11 - override
+class Humano {
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+}
+
+const amanda = new Humano("Amanda", 25);
+
+console.log(amanda);
+console.log(Humano.prototype.idade);
+
+Humano.prototype.idade = "Não definida";
+
+console.log(amanda.idade);
+console.log(Humano.prototype.idade);
