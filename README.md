@@ -1,108 +1,88 @@
-# 📌 Formação Front-end | Portfólio de Estudos e Projetos
+## 🚀 Formação Front-end | Portfólio de Estudos
 
-Este repositório reúne meus **estudos, exercícios e projetos práticos** desenvolvidos durante a **Formação Front-end – HTML, CSS, JavaScript, React e TypeScript**, com foco em aprendizado progressivo, boas práticas e aplicação real dos conceitos.
+ Este repositório documenta minha jornada na Formação Front-end – HTML, CSS, JavaScript, React e TypeScript, cobrindo desde fundamentos até conceitos avançados aplicados em projetos práticos.
 
-O objetivo deste repositório é **documentar minha evolução**, consolidar conhecimentos e apresentar projetos de forma clara para recrutadores e profissionais da área.
+ A formação foi estruturada para consolidar base sólida, boas práticas e desenvolvimento de aplicações modernas.
 
----
+## 🧠 Tecnologias e Competências
 
-## 🚀 Sobre a formação
+🔹 HTML & CSS
 
-A formação aborda o desenvolvimento Front-end **do básico ao avançado**, com foco em:
+* HTML semântico
 
-* Construção de interfaces modernas
-* Boas práticas de código (Clean Code)
-* Projetos práticos para simular cenários reais
-* Criação de portfólio profissional
+* Formulários
 
-O curso foi estruturado para iniciantes, mas também aprofunda conceitos importantes para quem já possui alguma base em programação.
+* Layout responsivo (mobile-first)
 
----
+* Flexbox
 
-## 📚 Tecnologias e conteúdos estudados
+* Organização de estilos
 
-### ✅ Já estudado (aprox. 20% do curso)
+🔹 JavaScript
 
-* **HTML5**
+* Tipos de dados e operadores
 
-  * Estrutura semântica
-  * Tags e atributos
-  * Formulários completos
-* **CSS3**
+* Estruturas condicionais e de repetição
 
-  * Estilização
-  * Layouts responsivos
-  * Media queries e breakpoints
-  * Flexbox (justify-content, align-items, gap, wrap, order, grow, shrink)
-* **Responsividade**
+* Funções, escopo, closures e recursão
 
-  * Mobile-first
-  * Layouts adaptáveis
-* **Introdução ao JavaScript**
+* Arrays, objetos e JSON
 
-  * Manipulação básica
-  * Funcionalidades iniciais em projetos
-* **Publicação de sites**
+* Programação Orientada a Objetos (classes, prototypes, herança)
 
-  * Conceitos de hospedagem
-  * Envio e atualização de arquivos no servidor
+* Manipulação do DOM e eventos
 
----
+🔹 React
 
-### 🔜 Próximos conteúdos da formação
+* Componentização
 
-* **JavaScript**
+* Props e State
 
-  * Lógica de programação
-  * DOM e eventos
-  * Criação de aplicações interativas
-* **React**
+* Context API
 
-  * Componentização
-  * Props e State
-  * Context API
-  * Hooks
-* **TypeScript**
+* Hooks
 
-  * Tipagem
-  * Boas práticas
-  * Integração com React
+* Estruturação de aplicações
+
+🔹 TypeScript
+
+* Tipagem estática
+
+* Interfaces e types
+
+* Integração com React
 
 ---
 
-## 🛠 Projetos desenvolvidos
+## 🛠 Projetos Desenvolvidos
 
-Durante a formação, desenvolvi projetos práticos para aplicar os conceitos aprendidos, incluindo:
+- Landing pages responsivas
 
-* Página temática com estrutura semântica
-* **Newsletter** com modo claro e escuro
-* Landing page completa com:
+- Blog com HTML semântico
 
-  * Planos e preços
-  * Formulários
-  * Layout responsivo
-* Formulário avançado para cadastro e envio de informações
+- Página de login
 
-> Cada projeto está organizado em pastas individuais, contendo código limpo e estruturado.
+- Formulários avançados
 
----
+- Aplicações interativas com JavaScript
 
-## 🎯 Objetivo profissional
+- Projetos com React e TypeScript
 
-Meu foco é evoluir constantemente no **desenvolvimento Front-end**, fortalecendo a base em HTML, CSS e JavaScript, e avançando para **React e TypeScript**, sempre priorizando:
+- Todos desenvolvidos aplicando:
 
-* Código limpo
-* Boas práticas
-* Experiência do usuário
-* Aprendizado contínuo
+- Clean Code
+
+- Organização modular
+
+- Responsividade
+
+- Boas práticas de desenvolvimento
 
 ---
 
-## 📂 Como navegar neste repositório
+## 🎯 Objetivo
 
-* Cada pasta representa um **projeto ou módulo**
-* Os projetos mais relevantes estão fixados (**Pinned**) no perfil
-* READMEs individuais podem ser adicionados futuramente para detalhar cada projeto
+Atuar como desenvolvedor Front-end, construindo aplicações modernas, organizadas e escaláveis, com foco em qualidade de código e experiência do usuário.
 
 ---
 
@@ -111,7 +91,3 @@ Meu foco é evoluir constantemente no **desenvolvimento Front-end**, fortalecend
 Caso queira conversar sobre algum projeto ou trocar experiências:
 
 * LinkedIn: *https://www.linkedin.com/in/amanda-voigt-guimar%C3%A3es/*
-
----
-
-✨ *Este repositório está em constante atualização conforme avanço na formação.*
