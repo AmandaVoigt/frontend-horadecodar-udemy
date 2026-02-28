@@ -236,3 +236,12 @@ const shark = new Lobo(4, "Shark");
 
 console.log(shark);
 console.log(shark.patas);
+
+// 15 - instanceof
+console.log(shark instanceof Lobo);
+
+console.log(Lobo instanceof Mamifero);
+
+console.log(new Lobo(4, "teste") instanceof Mamifero);
+
+console.log(new Post("a", "b") instanceof Lobo);
