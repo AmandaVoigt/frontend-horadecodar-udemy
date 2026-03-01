@@ -51,3 +51,21 @@ console.log("executou o loop");
 if (c > 5) {
   c = 25;
 }
+
+// 4 - tratamento de dados
+function checkNumber(n) {
+  const result = Number(n);
+
+  if (Number.isNaN(result)) {
+    console.log("Valor incorreto!");
+    return;
+  }
+
+  console.log("Valor correto!");
+  return result;
+}
+
+checkNumber(5);
+checkNumber("10");
+checkNumber({});
+checkNumber("tesete");
