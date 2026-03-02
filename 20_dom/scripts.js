@@ -90,3 +90,8 @@ console.log(product1.getBoundingClientRect());
 mainContainer.style.color = "purple";
 mainContainer.style.backgroundColor = "#7edffd";
 mainContainer.style.paddingBottom = "15px";
+
+// 14 - estilizando vários itens
+for (const li of listItens) {
+  li.style.backgroundColor = "#a3e6fa";
+}
