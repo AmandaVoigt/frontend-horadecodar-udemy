@@ -85,3 +85,8 @@ console.log(footer.clientHeight);
 const product1 = products[0];
 
 console.log(product1.getBoundingClientRect());
+
+// 13 - alterando estilos do elemento
+mainContainer.style.color = "purple";
+mainContainer.style.backgroundColor = "#7edffd";
+mainContainer.style.paddingBottom = "15px";
