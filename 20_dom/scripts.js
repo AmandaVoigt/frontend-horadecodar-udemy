@@ -62,3 +62,12 @@ h3.appendChild(myText);
 console.log(h3);
 
 mainContainer.appendChild(h3);
+
+// 10 - trabalhando com atributos
+const firstLink = navLinks.querySelector("a");
+console.log(firstLink);
+
+firstLink.setAttribute("href", "https://www.google.com");
+console.log(firstLink.getAttribute("href"));
+
+firstLink.setAttribute("target", "_blank");
