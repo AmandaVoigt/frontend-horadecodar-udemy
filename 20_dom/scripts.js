@@ -80,3 +80,8 @@ console.log(footer.offsetHeight);
 
 console.log(footer.clientWidth);
 console.log(footer.clientHeight);
+
+// 12 - posição do elemento da tela
+const product1 = products[0];
+
+console.log(product1.getBoundingClientRect());
