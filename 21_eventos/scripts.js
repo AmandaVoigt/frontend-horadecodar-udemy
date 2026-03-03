@@ -100,3 +100,12 @@ input.addEventListener("focus", (e) => {
 input.addEventListener("blur", (e) => {
   console.log("Saiu do input");
 });
+
+// 11 - evento de carregamento
+window.addEventListener("load", () => {
+  console.log("A página carregou!");
+});
+
+window.addEventListener("beforeunload", (e) => {
+  e.preventDefault();
+});
