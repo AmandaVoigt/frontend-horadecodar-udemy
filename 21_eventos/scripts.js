@@ -20,3 +20,13 @@ thirdBtn.addEventListener("click", () => {
   console.log("Evento removido");
   secondBtn.removeEventListener("click", imprimirMensagem);
 });
+
+// 3 - objeto do evento
+const myTitle = document.querySelector("#my-title");
+
+myTitle.addEventListener("click", (event) => {
+  console.log(event);
+  console.log(event.offsetX);
+  console.log(event.pointerType);
+  console.log(event.target);
+});
