@@ -82,3 +82,10 @@ document.addEventListener("mousemove", (e) => {
   //   console.log(`No eixo X: ${e.x}`);
   //   console.log(`No eixo Y: ${e.y}`);
 });
+
+// 9 - evento por scroll
+window.addEventListener("scroll", (e) => {
+  if (window.pageYOffset > 200) {
+    console.log("Passamos de 200px");
+  }
+});
