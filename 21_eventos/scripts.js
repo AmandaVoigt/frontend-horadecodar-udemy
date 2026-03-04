@@ -109,3 +109,25 @@ window.addEventListener("load", () => {
 window.addEventListener("beforeunload", (e) => {
   e.preventDefault();
 });
+
+// 12 - debounce
+const debounce = (f, delay) => {
+  let timeout;
+
+  return (...args) => {
+    if (timeout) {
+      clearTimeout(timeout);
+    }
+
+    timeout = setTimeout(() => {
+      f.apply(args);
+    }, delay);
+  };
+};
+
+window.addEventListener(
+  "mousemove",
+  debounce(() => {
+    console.log("Executando a cada 400ms");
+  }, 400),
+);
