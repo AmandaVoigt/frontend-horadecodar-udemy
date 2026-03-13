@@ -92,3 +92,19 @@ const users = [
 const availableUsers = users.filter((user) => user.available);
 
 console.log(availableUsers);
+
+// 4 - map
+const products = [
+  { name: "Camisa", price: 10.99, categoty: "Roupas" },
+  { name: "Chaleira Elétrica", price: 150, categoty: "Eletro" },
+  { name: "Fogão", price: 499, categoty: "Eletro" },
+  { name: "Calça Jeans", price: 87.99, categoty: "Roupas" },
+];
+
+products.map((product) => {
+  if (product.categoty === "Roupas") {
+    product.onSale = true;
+  }
+});
+
+console.log(products);
