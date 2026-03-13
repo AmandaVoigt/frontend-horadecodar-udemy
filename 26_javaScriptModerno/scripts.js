@@ -1,119 +1,119 @@
 // 1 - var, let e const
-// var x = 10;
-// var y = 15;
+var x = 10;
+var y = 15;
 
-// if (y > 10) {
-//   var x = 5;
-//   console.log(x);
-// }
+if (y > 10) {
+  var x = 5;
+  console.log(x);
+}
 
-// console.log(x);
+console.log(x);
 
-// let a = 10;
-// let b = 15;
+let a = 10;
+let b = 15;
 
-// if (b > 10) {
-//   let a = 5;
-//   console.log(a);
-// }
+if (b > 10) {
+  let a = 5;
+  console.log(a);
+}
 
-// console.log(a);
+console.log(a);
 
-// function logName() {
-//   const name = "Maria";
-//   console.log(name);
-// }
+function logName() {
+  const name = "Maria";
+  console.log(name);
+}
 
-// const name = "Amanda";
+const name = "Amanda";
 
-// logName();
+logName();
 
-// console.log(name);
+console.log(name);
 
-// // 2 - arrow function
-// const sum = function (a, b) {
-//   return a + b;
-// };
+// 2 - arrow function
+const sum = function (a, b) {
+  return a + b;
+};
 
-// const arrowSum = (a, b) => a + b;
+const arrowSum = (a, b) => a + b;
 
-// console.log(sum(5, 5));
-// console.log(arrowSum(5, 5));
+console.log(sum(5, 5));
+console.log(arrowSum(5, 5));
 
-// const greeting = (name) => {
-//   if (name) {
-//     return `Hello ${name}!`;
-//   } else {
-//     return "Hello!";
-//   }
-// };
+const greeting = (name) => {
+  if (name) {
+    return `Hello ${name}!`;
+  } else {
+    return "Hello!";
+  }
+};
 
-// console.log(greeting("Amanda"));
-// console.log(greeting());
+console.log(greeting("Amanda"));
+console.log(greeting());
 
-// const user = {
-//   name: "Lion",
-//   sayUserName() {
-//     setTimeout(function () {
-//       console.log(this);
-//       console.log(`Usermane: ${this.name}`);
-//     }, 1000);
-//   },
-//   sayUserNameArrow() {
-//     setTimeout(() => {
-//       console.log(this);
-//       console.log(`Username: ${this.name}`);
-//     }, 2000);
-//   },
-// };
+const user = {
+  name: "Lion",
+  sayUserName() {
+    setTimeout(function () {
+      console.log(this);
+      console.log(`Usermane: ${this.name}`);
+    }, 1000);
+  },
+  sayUserNameArrow() {
+    setTimeout(() => {
+      console.log(this);
+      console.log(`Username: ${this.name}`);
+    }, 2000);
+  },
+};
 
-// // user.sayUserName();
-// // user.sayUserNameArrow();
+user.sayUserName();
+user.sayUserNameArrow();
 
-// // 3 - filter
-// const arr = [1, 2, 3, 4, 5, 6];
+// 3 - filter
+const arr = [1, 2, 3, 4, 5, 6];
 
-// const highNumbers = arr.filter((n) => {
-//   if (n >= 3) {
-//     return n;
-//   }
-// });
+const highNumbers = arr.filter((n) => {
+  if (n >= 3) {
+    return n;
+  }
+});
 
-// console.log(highNumbers);
+console.log(highNumbers);
 
-// const users = [
-//   { name: "Amanda", available: true },
-//   { name: "Matheus", available: false },
-//   { name: "Lion", available: true },
-//   { name: "Agata", available: false },
-//   { name: "Luis Gustavo", available: true },
-// ];
+const users = [
+  { name: "Amanda", available: true },
+  { name: "Matheus", available: false },
+  { name: "Lion", available: true },
+  { name: "Agata", available: false },
+  { name: "Luis Gustavo", available: true },
+];
 
-// const availableUsers = users.filter((user) => user.available);
+const availableUsers = users.filter((user) => user.available);
 
-// console.log(availableUsers);
+console.log(availableUsers);
 
-// // 4 - map
-// const products = [
-//   { name: "Camisa", price: 10.99, categoty: "Roupas" },
-//   { name: "Chaleira Elétrica", price: 150, categoty: "Eletro" },
-//   { name: "Fogão", price: 499, categoty: "Eletro" },
-//   { name: "Calça Jeans", price: 87.99, categoty: "Roupas" },
-// ];
+// 4 - map
+const products = [
+  { name: "Camisa", price: 10.99, categoty: "Roupas" },
+  { name: "Chaleira Elétrica", price: 150, categoty: "Eletro" },
+  { name: "Fogão", price: 499, categoty: "Eletro" },
+  { name: "Calça Jeans", price: 87.99, categoty: "Roupas" },
+];
 
-// products.map((product) => {
-//   if (product.categoty === "Roupas") {
-//     product.onSale = true;
-//   }
-// });
+products.map((product) => {
+  if (product.categoty === "Roupas") {
+    product.onSale = true;
+  }
+});
 
-// console.log(products);
+console.log(products);
 
-// // 5 - template literals
-// const userName = "Amanda";
-// const age = 25;
+// 5 - template literals
+const userName = "Amanda";
+const age = 25;
 
-// console.log(`O nome da usuária é ${userName} e ela tem ${age} anos.`);
+console.log(`O nome da usuária é ${userName} e ela tem ${age} anos.`);
 
 // 6 - destructuring
 const fruits = ["Maça", "Mamão", "Laranja"];
@@ -168,3 +168,29 @@ console.log(shirt);
 
 console.log(shirt.productWithDiscount(10));
 console.log(shirt.productWithDiscount(15));
+
+// 9 - herança
+class ProductWithAttributes extends Product {
+  constructor(name, price, colors) {
+    super(name, price);
+    this.colors = colors;
+  }
+
+  showColors() {
+    console.log("As cores são: ");
+    this.colors.forEach((color) => {
+      console.log(color);
+    });
+  }
+}
+
+const hat = new ProductWithAttributes("Chapéu", 29.99, [
+  "Preto",
+  "Amarelo",
+  "Verde",
+]);
+
+console.log(hat);
+console.log(hat.name);
+
+hat.showColors();
