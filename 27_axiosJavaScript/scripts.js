@@ -6,6 +6,13 @@ const getData = async () => {
   try {
     const response = await axios.get(
       "https://jsonplaceholder.typicode.com/users",
+      // 4 - definindo headers
+      {
+        headers: {
+          "Content-Type": "application/json",
+          custom: "header",
+        },
+      },
     );
 
     console.log(response);
