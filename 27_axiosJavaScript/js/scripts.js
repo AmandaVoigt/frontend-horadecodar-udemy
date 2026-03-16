@@ -62,7 +62,7 @@ const bodyInput = document.querySelector("#body");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  postsFetc.post("/posts", {
+  postsFetch.post("/posts", {
     title: titleInput.value,
     body: bodyInput.value,
     userId: 1,
