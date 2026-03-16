@@ -1,4 +1,4 @@
-const postFetch = axios.create({
+const postsFetch = axios.create({
   baseURL: "https://jsonplaceholder.typicode.com",
   headers: {
     Accept: "application/json",

@@ -4,7 +4,7 @@ console.log(axios);
 // 2 - primeiro request
 const getData = async () => {
   try {
-    const response = await postFetch.get(
+    const response = await postsFetch.get(
       "/users",
       // 4 - definindo headers
       {
@@ -62,7 +62,7 @@ const bodyInput = document.querySelector("#body");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  postFetc.post("/posts", {
+  postsFetc.post("/posts", {
     title: titleInput.value,
     body: bodyInput.value,
     userId: 1,
