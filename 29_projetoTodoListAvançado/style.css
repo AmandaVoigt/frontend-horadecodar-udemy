@@ -10,7 +10,7 @@
 body {
   background-image: url("img/bg.jpg");
   background-position: center;
-  background-color: cover;
+  background-size: cover;
 }
 
 button {
