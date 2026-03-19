@@ -62,6 +62,11 @@ function createNote(id, content, fixed) {
   }
 
   // Eventos do elemento
+  element.querySelector("textarea").addEventListener("keyup", () => {
+    const noteContent = element.querySelector("textarea").value;
+    updateNote(id, noteContent);
+  });
+
   element.querySelector(".bi-x-lg").addEventListener("click", () => {
     deleteNote(id, element);
   });
@@ -109,7 +114,17 @@ function copyNote(id) {
 
   const noteElement = createNote(noteObject.id, noteObject.content, false);
   notesContainer.appendChild(noteElement);
+
   notes.push(noteObject);
+
+  saveNotes(notes);
+}
+
+function updateNote(id, newContent) {
+  const notes = getNotes();
+  const targetNote = notes.filter((note) => note.id === id)[0];
+
+  targetNote.content = newContent;
 
   saveNotes(notes);
 }
