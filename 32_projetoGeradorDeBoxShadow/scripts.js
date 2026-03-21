@@ -8,15 +8,10 @@ class BoxShadowGenerator {
     blurRef,
     spread,
     spreadRef,
-    color,
-    colorRef,
-    opacity,
-    opacityRef,
-    inset,
     previewBox,
     rule,
     webkitRule,
-    mozRule
+    mozRule,
   ) {
     this.horizontal = horizontal;
     this.horizontalRef = horizontalRef;
@@ -26,16 +21,31 @@ class BoxShadowGenerator {
     this.blurRef = blurRef;
     this.spread = spread;
     this.spreadRef = spreadRef;
-    this.color = color;
-    this.colorRef = colorRef;
-    this.opacity = opacity;
-    this.opacityRef = opacityRef;
-    this.inset = inset;
-    this.insetRef = inset.checked;
     this.previewBox = previewBox;
     this.rule = rule;
     this.webkitRule = webkitRule;
     this.mozRule = mozRule;
+  }
+
+  initialize() {
+    this.horizontalRef.value = this.horizontal.value;
+    this.verticalRef.value = this.vertical.value;
+    this.blurRef.value = this.blur.value;
+    this.spreadRef.value = this.spread.value;
+
+    this.applyRule();
+    this.showRule();
+  }
+
+  applyRule() {
+    this.previewBox.style.boxShadow = `${this.horizontalRef.value}px  ${this.verticalRef.value}px ${this.blurRef.value}px ${this.spreadRef.value}px #000000`;
+    this.currentRule = this.previewBox.style.boxShadow;
+  }
+
+  showRule() {
+    this.rule.innerText = this.currentRule;
+    this.webkitRule.innerText = this.currentRule;
+    this.mozRule.innerText = this.currentRule;
   }
 }
 
@@ -66,9 +76,9 @@ const boxShadow = new BoxShadowGenerator(
   previewBox,
   rule,
   webkitRule,
-  mozRule
+  mozRule,
 );
 
-console.log(boxShadow);
+boxShadow.initialize();
 
 // Eventos
