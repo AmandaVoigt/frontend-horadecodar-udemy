@@ -8,10 +8,15 @@ class BoxShadowGenerator {
     blurRef,
     spread,
     spreadRef,
+    color,
+    colorRef,
+    opacity,
+    opacityRef,
+    inset,
     previewBox,
     rule,
     webkitRule,
-    mozRule,
+    mozRule
   ) {
     this.horizontal = horizontal;
     this.horizontalRef = horizontalRef;
@@ -21,6 +26,12 @@ class BoxShadowGenerator {
     this.blurRef = blurRef;
     this.spread = spread;
     this.spreadRef = spreadRef;
+    this.color = color;
+    this.colorRef = colorRef;
+    this.opacity = opacity;
+    this.opacityRef = opacityRef;
+    this.inset = inset;
+    this.insetRef = inset.checked;
     this.previewBox = previewBox;
     this.rule = rule;
     this.webkitRule = webkitRule;
@@ -80,6 +91,12 @@ const spread = document.querySelector("#spread");
 const spreadRef = document.querySelector("#spread-value");
 const previewBox = document.querySelector("#box");
 
+const color = document.querySelector("#color");
+const colorRef = document.querySelector("#color-value");
+const opacity = document.querySelector("#opacity");
+const opacityRef = document.querySelector("#opacity-value");
+const inset = document.querySelector("#inset");
+
 const rule = document.querySelector("#rule span");
 const webkitRule = document.querySelector("#webkit-rule span");
 const mozRule = document.querySelector("#moz-rule span");
@@ -93,10 +110,15 @@ const boxShadow = new BoxShadowGenerator(
   blurRef,
   spread,
   spreadRef,
+  color,
+  colorRef,
+  opacity,
+  opacityRef,
+  inset,
   previewBox,
   rule,
   webkitRule,
-  mozRule,
+  mozRule
 );
 
 boxShadow.initialize();
