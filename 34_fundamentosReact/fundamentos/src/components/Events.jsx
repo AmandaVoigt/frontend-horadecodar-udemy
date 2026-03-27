@@ -6,17 +6,29 @@ const Events = () => {
     console.log("Executou");
   };
 
+  // 8 - função de renderização
+  const renderSomething = (x) => {
+    if (x) {
+      return <h1>Renderizando isso!</h1>;
+    } else {
+      return <h1>Renderizando outra coisa!</h1>;
+    }
+  };
+
   return (
     <div>
       <div>
         <button onClick={() => console.log("Testando um evento")}>
-        Clique aqui
-      </button>
+          Clique aqui
+        </button>
       </div>
       {/* 7 - evento com função */}
       <div>
         <button onClick={handleClique}>Clique aqui - com função</button>
       </div>
+      {/* 8 - função com renderização */}
+      {renderSomething(true)}
+      {renderSomething(false)}
     </div>
   );
 };
