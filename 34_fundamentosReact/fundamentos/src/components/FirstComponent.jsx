@@ -1,3 +1,4 @@
+// 1 - criando componente
 const FirstComponent = () => {
   return (
     <div>
