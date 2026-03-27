@@ -9,6 +9,9 @@ import TemplateExpression from "./components/TemplateExpression";
 // 5 - hierarquia de componentes
 import MyComponent from "./components/MyComponent";
 
+// 6 - eventos
+import Events from "./components/Events";
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +20,7 @@ function App() {
       <FirstComponent />
       <TemplateExpression />
       <MyComponent />
+      <Events />
     </div>
   );
 }
