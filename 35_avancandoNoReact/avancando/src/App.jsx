@@ -12,9 +12,12 @@ import ListRender from "./components/ListRender";
 // 7 - render condicional
 import ConditionalRender from "./components/ConditionalRender";
 
+// 8 - props
+import ShowUserName from "./components/ShowUserName";
+
 function App() {
   return (
-    <div className="App" style={{paddingBottom: "500px"} }>
+    <div className="App" style={{ paddingBottom: "500px" }}>
       <h1>Avançando no React</h1>
       {/* 1 - imagem em public */}
       <img src="public/img1.jpg" alt="Alguma imagem" />
@@ -26,6 +29,8 @@ function App() {
       <ListRender />
       {/* 7 - render condicional */}
       <ConditionalRender />
+      {/* 8 - props */}
+      <ShowUserName name="Amanda" />
     </div>
   );
 }
