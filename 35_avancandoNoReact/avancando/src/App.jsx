@@ -6,6 +6,9 @@ import city from "./assets/city.jpg";
 // 3 - useState
 import Data from "./components/Data";
 
+// 4 - renderização de listas
+import ListRender from "./components/ListRender";
+
 function App() {
   return (
     <div className="App" style={{paddingBottom: "500px"} }>
@@ -16,6 +19,8 @@ function App() {
       <img src={city} alt="Cidade" />
       {/* 3 - useState */}
       <Data />
+      {/* 4 - renderização de listas */}
+      <ListRender />
     </div>
   );
 }
