@@ -6,6 +6,8 @@ const MyForm = ({ userName, userEmail }) => {
   const [name, setName] = useState(userName);
   const [email, setEmail] = useState(userEmail);
 
+  const [bio, setBio] = useState("");
+
   const handleName = (e) => {
     setName(e.target.value);
   };
@@ -14,7 +16,7 @@ const MyForm = ({ userName, userEmail }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(name, email);
+    console.log(name, email, bio);
 
     // validação
     // envio
@@ -22,6 +24,7 @@ const MyForm = ({ userName, userEmail }) => {
     // 7 - limpar o formulário
     setName("");
     setEmail("");
+    setBio("");
   };
 
   return (
@@ -52,6 +55,16 @@ const MyForm = ({ userName, userEmail }) => {
             // 6 - controlled input
             value={email || ""}
           />
+        </label>
+        {/* 8 - textarea */}
+        <label>
+          <span>Bio:</span>
+          <textarea
+            name="bio"
+            placeholder="Descrição do usuário"
+            onChange={(e) => setBio(e.target.value)}
+            value={bio}
+          ></textarea>
         </label>
         <input type="submit" value="Enviar" />
       </form>
