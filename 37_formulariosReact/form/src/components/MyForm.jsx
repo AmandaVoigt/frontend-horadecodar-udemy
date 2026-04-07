@@ -10,11 +10,18 @@ const MyForm = ({ userName, userEmail }) => {
     setName(e.target.value);
   };
 
-  //   5 - envio de formulário
+  // 5 - envio de formulário
   const handleSubmit = (e) => {
     e.preventDefault();
 
     console.log(name, email);
+
+    // validação
+    // envio
+
+    // 7 - limpar o formulário
+    setName("");
+    setEmail("");
   };
 
   return (
