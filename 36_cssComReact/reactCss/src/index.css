@@ -14,3 +14,10 @@ body {
 h1 {
   color: blueviolet;
 }
+
+/* 5 - classes dinâmicas */
+.red-title {
+  font-size: 50px;
+  color: #f500c0;
+  background-color: #c86aff;
+}
