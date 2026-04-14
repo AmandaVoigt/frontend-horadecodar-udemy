@@ -8,10 +8,10 @@ const url = "http://localhost:3000/products";
 
 function App() {
   // 1 - resgatando dados
-  const [setProducts] = useState([]);
+  // const [setProducts] = useState([]);
 
   // 4 - custom hook
-  const { data: items } = useFetch(url);
+  const { data: items, httpConfig } = useFetch(url);
 
   // useEffect(() => {
   //   async function getData() {
@@ -35,19 +35,23 @@ function App() {
       name,
       price,
     };
+    
+    // 5 - refatorando post
+    httpConfig(product, "POST");
 
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(product),
-    });
 
-    // 3 - carregamento dinâmico
-    const addedProduct = await res.json();
+    // const res = await fetch(url, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(product),
+    // });
 
-    setProducts((prevProducts) => [...prevProducts, addedProduct]);
+    // // 3 - carregamento dinâmico
+    // const addedProduct = await res.json();
+
+    // setProducts((prevProducts) => [...prevProducts, addedProduct]);
   };
 
   return (

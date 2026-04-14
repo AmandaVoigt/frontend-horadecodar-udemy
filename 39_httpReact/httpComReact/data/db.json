@@ -34,6 +34,11 @@
       "name": "Bolsa azul",
       "price": "250",
       "id": "OFrLwJD0S44"
+    },
+    {
+      "name": "Calça roxa",
+      "price": "52,00",
+      "id": "GQ9IL9JWTGA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
