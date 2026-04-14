@@ -31,7 +31,6 @@ function App() {
       price,
     };
 
-    // eslint-disable-next-line no-unused-vars
     const res = await fetch(url, {
       method: "POST",
       headers: {
@@ -39,6 +38,11 @@ function App() {
       },
       body: JSON.stringify(product),
     });
+
+    // 3 - carregamento dinâmico
+    const addedProduct = await res.json();
+
+    setProducts((prevProducts) => [...prevProducts, addedProduct]);
   };
 
   return (

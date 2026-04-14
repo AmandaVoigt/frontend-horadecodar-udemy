@@ -19,6 +19,21 @@
       "name": "celular",
       "price": "1200",
       "id": "10zIgaqBs-I"
+    },
+    {
+      "name": "Bolsa azul",
+      "price": "250",
+      "id": "sq8NuplbOYM"
+    },
+    {
+      "name": "Bolsa azul",
+      "price": "250",
+      "id": "6ZJ27PwJJCE"
+    },
+    {
+      "name": "Bolsa azul",
+      "price": "250",
+      "id": "OFrLwJD0S44"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
