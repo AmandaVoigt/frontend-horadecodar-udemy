@@ -2,8 +2,13 @@ import "./App.css";
 
 // components
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
+import UserForm from ".components/UserForm";
+import ReviewForm from ".components/ReviewForm";
+import Thanks from ".components/Thanks";
 
 function App() {
+  const formComponents = [<UserForm />, <ReviewForm />, <Thanks />];
+
   return (
     <div className="app">
       <div className="header">
