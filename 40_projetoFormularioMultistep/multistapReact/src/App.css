@@ -1,0 +1,99 @@
+/* Container principal da aplicação */
+.app {
+  padding: 2rem; /* Espaçamento interno geral */
+}
+
+/* cabeçalho */
+.header {
+  text-align: center; /* Centraliza texto */
+  margin-bottom: 2rem; /* Espaço abaixo do header */
+}
+
+/* Título do header */
+.header h2 {
+  font-size: 2rem; /* Tamanho grande do título */
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+}
+
+/* Container do formulário */
+.form-container {
+  max-width: 600px; /* Limita largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  background-color: #fff; /* Fundo branco */
+  padding: 1.5rem; /* Espaçamento interno */
+
+  /* Sombra suave (efeito de "card") */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Formulário interno */
+.form-container form {
+  max-width: 400px; /* Limita ainda mais o conteúdo */
+  margin: 0 auto; /* Centraliza */
+}
+
+/* Container dos inputs */
+.inputs-container {
+  min-height: 280px; 
+  /* Garante altura mínima (evita layout "pulando" ao trocar etapas) */
+}
+
+/* Cada campo do formulário */
+.form-control {
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Empilha label + input */
+  gap: 0.6rem; /* Espaço entre label e input */
+  margin-bottom: 2rem; /* Espaço entre campos */
+}
+
+/* Labels */
+label {
+  font-weight: bold; /* Negrito */
+  color: #777; /* Cor secundária */
+  font-size: 0.9rem; /* Texto menor */
+}
+
+/* Inputs e textarea */
+input,
+textarea {
+  padding: 0.6rem; /* Espaço interno */
+  border: none; /* Remove borda padrão */
+  border-radius: 3px; /* Cantos arredondados */
+
+  /* Sombra leve */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Altura específica do textarea */
+textarea {
+  height: 120px;
+}
+
+/* ações (botões) */
+.actions {
+  display: flex;
+  justify-content: flex-end; /* Alinha botões à direita */
+  gap: 1rem; /* Espaço entre botões */
+}
+
+/* Botões */
+.actions button {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+
+  display: flex; /* Permite alinhar ícone + texto */
+  gap: 0.5rem;
+  align-items: center;
+
+  border-radius: 3px;
+  background-color: #dfdfdf;
+  cursor: pointer;
+  border: none;
+
+  transition: 0.3s; /* Suaviza hover */
+}
+
+/* Hover do botão */
+.actions button:hover {
+  background-color: #cfcfcf; /* Escurece levemente */
+}

@@ -1,3 +1,18 @@
+/* Aplica estilos para TODOS os elementos da página */
 * {
-  font-family: "Barlow", sans-serif;
+  font-family: "Barlow", sans-serif; /* Define a fonte padrão do projeto */
+  padding: 0;        /* Remove espaçamento interno padrão */
+  margin: 0;         /* Remove espaçamento externo padrão */
+  box-sizing: border-box; /* Faz width/height incluírem padding e border */
+  color: #333;       /* Define cor padrão do texto (cinza escuro) */
+}
+
+/* Estiliza todas as tags <p> */
+p {
+  color: #777; /* Cor mais clara para textos secundários */
+}
+
+/* Estiliza o corpo da página */
+body {
+  background-color: #f9fafc; /* Cor de fundo clara (quase branco) */
 }
