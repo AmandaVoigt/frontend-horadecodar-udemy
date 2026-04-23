@@ -13,26 +13,58 @@ import Steps from "./components/Steps";
 // Importa o hook customizado que controla os passos do formulário
 import { useForm } from "./hooks/useForm";
 
+// Importa hook de estado do React
+import { useState } from "react";
+
 // Importa estilos CSS
 import "./App.css";
 
+// Estrutura inicial do formulário (estado global)
+const formTemplate = {
+  name: "",     // nome do usuário
+  email: "",    // email
+  review: "",   // avaliação (radio)
+  comment: "",  // comentário
+};
+
 // Componente principal da aplicação
 function App() {
-  // Array com os componentes de cada etapa (ordem importa)
-  const formComponents = [<UserForm />, <ReviewForm />, <Thanks />];
 
-  // Desestruturação dos dados retornados pelo hook useForm
-  const { 
+  // Estado que guarda todos os dados do formulário
+  const [data, setData] = useState(formTemplate);
+
+  // Função para atualizar qualquer campo do formulário
+  const updateFieldHandler = (key, value) => {
+    setData((prev) => {
+      // copia o estado anterior e atualiza só o campo específico
+      return { ...prev, [key]: value };
+    });
+  };
+
+  // Array com os componentes de cada etapa (ordem importa)
+  const formComponents = [
+    // passa os dados e função para os componentes filhos
+    <UserForm data={data} updateFieldHandler={updateFieldHandler} />,
+
+    <ReviewForm data={data} updateFieldHandler={updateFieldHandler} />,
+
+    // último step só exibe os dados
+    <Thanks data={data} />,
+  ];
+
+  // Hook que controla navegação entre etapas
+  const {
     currentStep,        // índice da etapa atual
-    currentComponent,   // componente correspondente à etapa atual
-    changeStep,         // função para mudar de etapa
-    isLastStep,         // boolean: é a última etapa?
-    isFirstStep         // boolean: é a primeira etapa?
+    currentComponent,   // componente da etapa atual
+    changeStep,         // função para mudar etapa
+    isLastStep,         // é última etapa?
+    isFirstStep,        // é primeira etapa?
   } = useForm(formComponents);
 
   return (
     <div className="app">
-      {/* Cabeçalho do formulário */}
+
+      {/* Cabeçalho */}
       <div className="header">
         <h2>Deixe sua avaliação</h2>
         <p>
@@ -43,20 +75,25 @@ function App() {
 
       {/* Container do formulário */}
       <div className="form-container">
-        <Steps currentStep={currentStep}/>
 
-        {/* Formulário principal */}
+        {/* Componente visual dos passos */}
+        <Steps currentStep={currentStep} />
+
+        {/* Formulário */}
         <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
-          {/* Renderiza o componente da etapa atual */}
-          <div className="inputs-container">{currentComponent}</div>
 
-          {/* Área de botões */}
+          {/* Renderiza o step atual dinamicamente */}
+          <div className="inputs-container">
+            {currentComponent}
+          </div>
+
+          {/* Botões */}
           <div className="actions">
 
-            {/* Botão "Voltar" só aparece se NÃO for a primeira etapa */}
+            {/* Botão voltar */}
             {!isFirstStep && (
-              <button 
-                type="button" 
+              <button
+                type="button"
                 onClick={() => changeStep(currentStep - 1)}
               >
                 <GrFormPrevious />
@@ -64,14 +101,13 @@ function App() {
               </button>
             )}
 
-            {/* Se NÃO for a última etapa, mostra botão "Avançar" */}
+            {/* Botão avançar ou enviar */}
             {!isLastStep ? (
               <button type="submit">
                 <span>Avançar</span>
                 <GrFormNext />
               </button>
             ) : (
-              // Se for a última etapa, mostra botão "Enviar"
               <button type="button">
                 <span>Enviar</span>
                 <FiSend />
@@ -84,5 +120,5 @@ function App() {
   );
 }
 
-// Exporta o componente para uso em outros arquivos
+// Exporta o componente
 export default App;

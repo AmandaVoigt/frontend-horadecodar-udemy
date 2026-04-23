@@ -1,39 +1,55 @@
-// Importa o React (necessário em alguns setups, especialmente mais antigos)
+// Importa o React (nem sempre necessário em versões modernas)
 import React from "react";
 
-// Define um componente funcional chamado UserForm
-const UserForm = () => {
+// Componente recebe:
+// data → estado com os valores
+// updateFieldHandler → função para atualizar o estado
+const UserForm = ({ data, updateFieldHandler }) => {
   return (
-    // Container principal do formulário dessa etapa
-    <div>
+    <div> {/* container principal */}
 
       {/* Campo de Nome */}
       <div className="form-control">
-        {/* Label associada ao input via htmlFor */}
+
+        {/* Label ligada ao input */}
         <label htmlFor="name">Nome:</label>
 
-        {/* Input de texto para nome */}
         <input
-          type="text"           // tipo do campo (texto)
-          name="name"           // nome do campo (usado em formulários)
-          id="name"             // id usado para conectar com o label
-          placeholder="Digite o seu nome" // texto de ajuda dentro do input
-          required              // campo obrigatório (HTML valida automaticamente)
+          type="text" // tipo texto
+          name="name" // nome do campo (chave do objeto)
+          id="name"   // conecta com o label
+          placeholder="Digite o seu nome"
+          required    // obrigatório
+
+          // valor controlado pelo estado
+          value={data.name || ""}
+
+          // atualiza o estado ao digitar
+          onChange={(e) =>
+            updateFieldHandler("name", e.target.value)
+          }
         />
       </div>
 
-      {/* Campo de E-mail */}
+      {/* Campo de Email */}
       <div className="form-control">
-        {/* Label associada ao input de email */}
+
         <label htmlFor="email">E-mail:</label>
 
-        {/* Input específico para email */}
         <input
-          type="email"          // valida formato de email automaticamente
-          name="email"          // nome do campo
-          id="email"            // id para ligação com o label
+          type="email" // valida formato automaticamente
+          name="email"
+          id="email"
           placeholder="Digite o seu e-mail"
-          required              // campo obrigatório
+          required
+
+          // valor controlado
+          value={data.email || ""}
+
+          // atualização do estado
+          onChange={(e) =>
+            updateFieldHandler("email", e.target.value)
+          }
         />
       </div>
 
@@ -41,5 +57,5 @@ const UserForm = () => {
   );
 };
 
-// Exporta o componente para ser usado no App.jsx
+// Exporta componente
 export default UserForm;
