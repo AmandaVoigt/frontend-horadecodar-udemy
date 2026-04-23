@@ -21,6 +21,8 @@
 
 .review-data svg {
   margin-left: 5px;
+  vertical-align: middle;
+  font-size: 0.9rem;
 }
 
 .review-data span {

@@ -1,9 +1,9 @@
 // Importa ícones de emojis
 import {
   BsFillEmojiHeartEyesFill, // muito satisfeito
-  BsFillEmojiSmileFill,     // satisfeito
-  BsFillEmojiNeutralFill,   // neutro
-  BsFillEmojiFrownFill,     // insatisfeito
+  BsFillEmojiSmileFill, // satisfeito
+  BsFillEmojiNeutralFill, // neutro
+  BsFillEmojiFrownFill, // insatisfeito
 } from "react-icons/bs";
 
 // Importa estilos
@@ -21,7 +21,6 @@ const emojiData = {
 const Thanks = ({ data }) => {
   return (
     <div className="thanks-container">
-
       {/* Título */}
       <h2>Falta pouco...</h2>
 
@@ -35,7 +34,10 @@ const Thanks = ({ data }) => {
       <p>Para concluir sua avaliação clique no botão de Enviar abaixo.</p>
 
       {/* Mostra nome do usuário dinamicamente */}
-      <h3>Aqui está o resumo da sua avaliação {data.name}:</h3>
+      <h3>
+        Aqui está o resumo da sua avaliação <br />
+        {data.name}:
+      </h3>
 
       {/* Mostra avaliação + ícone */}
       <p className="review-data">
@@ -49,7 +51,6 @@ const Thanks = ({ data }) => {
       <p className="review-data">
         <span>Comentário:</span> {data.comment}
       </p>
-
     </div>
   );
 };
