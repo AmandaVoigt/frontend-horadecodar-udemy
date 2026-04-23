@@ -1,0 +1,66 @@
+.steps {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.steps::after {
+  /* → seleciona um pseudo-elemento criado DEPOIS do conteúdo de .steps
+
+   .steps   = elemento principal
+   ::after  = elemento "virtual" inserido no final dele
+
+   Usado para:
+   - adicionar elementos visuais (linhas, ícones, efeitos)
+   - sem precisar criar HTML extra
+
+   ⚠️ Só aparece se tiver "content" */
+
+  content: ""; /* cria um pseudo-elemento (elemento "falso") */
+  width: 380px;
+  border-bottom: 1px solid #ccc;
+  position: absolute; /* posiciona livremente na tela (relativo ao pai) */
+  top: 20px;
+}
+
+.step {
+  text-align: center;
+  background-color: #fff;
+  z-index: 1; /* Controla a ordem de "camadas" dos elementos (quem fica na frente ou atrás)
+
+        → Quanto MAIOR o número, mais na frente o elemento fica
+        → Quanto MENOR, mais atrás
+
+        Exemplo:
+        z-index: 1  → atrás
+        z-index: 2  → na frente
+
+        ⚠️ Importante:
+        Só funciona se o elemento tiver "position" definido:
+        - position: relative;
+        - position: absolute;
+        - position: fixed;
+        - position: sticky;
+
+        Sem isso, o z-index não tem efeito */
+
+  width: 120px;
+  padding: 0.5rem;
+}
+
+.step svg { /* icones */
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+.active {
+    font-weight: bold;
+}
+
+.active > svg { 
+    fill: #7076f4;
+}

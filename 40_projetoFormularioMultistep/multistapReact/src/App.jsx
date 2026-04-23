@@ -1,5 +1,6 @@
 // Importa ícones de navegação (botões)
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
+
 // Importa ícone de envio
 import { FiSend } from "react-icons/fi";
 
@@ -7,6 +8,7 @@ import { FiSend } from "react-icons/fi";
 import UserForm from "./components/UserForm";
 import ReviewForm from "./components/ReviewForm";
 import Thanks from "./components/Thanks";
+import Steps from "./components/Steps";
 
 // Importa o hook customizado que controla os passos do formulário
 import { useForm } from "./hooks/useForm";
@@ -41,7 +43,7 @@ function App() {
 
       {/* Container do formulário */}
       <div className="form-container">
-        <p>etapas</p>
+        <Steps currentStep={currentStep}/>
 
         {/* Formulário principal */}
         <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
