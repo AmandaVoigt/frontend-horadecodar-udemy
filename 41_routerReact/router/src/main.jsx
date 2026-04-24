@@ -4,12 +4,17 @@ import "./index.css";
 import App from "./App.jsx";
 import Contact from "./routes/Contact.jsx";
 
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+// 2 - página de erro
+import ErrorPage from "./routes/ErrorPage.jsx";
+
+// 1 - configurando router
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />
   },
   {
     path: "contact",
