@@ -13,6 +13,9 @@ import ErrorPage from "./routes/ErrorPage.jsx";
 // 3 - componente base
 import Home from "./routes/Home.jsx";
 
+// 6 - rota dinâmica
+import Product from "./routes/Product.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,7 +30,12 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
-      }
+      },
+      // 6 - rota dinâmica
+      {
+        path: "products/:id",
+        element: <Product />,
+      },
     ],
   },
   // {
