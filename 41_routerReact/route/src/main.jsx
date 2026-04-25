@@ -19,6 +19,9 @@ import Product from "./routes/Product.jsx";
 // 7 - nasted route
 import { Info } from "./routes/Info.jsx";
 
+// 8 - search params
+import Search from "./routes/Search.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,6 +46,11 @@ const router = createBrowserRouter([
       {
         path: "products/:id/info",
         element: <Info />,
+      },
+      // 8 - search params
+      {
+        path: "search",
+        element: <Search />,
       },
     ],
   },
