@@ -16,6 +16,9 @@ import Home from "./routes/Home.jsx";
 // 6 - rota dinâmica
 import Product from "./routes/Product.jsx";
 
+// 7 - nasted route
+import { Info } from "./routes/Info.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,6 +38,11 @@ const router = createBrowserRouter([
       {
         path: "products/:id",
         element: <Product />,
+      },
+      // 7 - nasted route
+      {
+        path: "products/:id/info",
+        element: <Info />,
       },
     ],
   },
