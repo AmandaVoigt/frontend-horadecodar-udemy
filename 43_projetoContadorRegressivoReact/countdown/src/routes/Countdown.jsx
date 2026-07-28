@@ -5,6 +5,7 @@ import useCountdown from "../hooks/useCountdown";
 
 const Countdown = () => {
   const [day, hour, minute, second] = useCountdown("Jan 1, 2027 00:00:00");
+
   return (
     <>
       <Title title="Contagem regressiva para 2027" />
