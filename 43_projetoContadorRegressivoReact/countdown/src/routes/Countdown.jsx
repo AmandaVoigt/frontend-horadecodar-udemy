@@ -3,7 +3,7 @@ import Counter from "../components/Counter";
 import useCountdown from "../hooks/useCountdown";
 import { CountdownContext } from "../context/CountdownContext";
 import { Navigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 const Countdown = () => {
   const { event } = useContext(CountdownContext);
@@ -17,12 +17,12 @@ const Countdown = () => {
 
   return (
     <>
-      <Title title={eventTitle} />
+      <Title title={eventTitle} eventColor={eventColor} />
       <div className="countdown-container">
-        <Counter title="Dias" number={day} />
-        <Counter title="Horas" number={hour} />
-        <Counter title="Minutos" number={minute} />
-        <Counter title="Segundos" number={second} />
+        <Counter title="Dias" number={day} eventColor={eventColor} />
+        <Counter title="Horas" number={hour} eventColor={eventColor} />
+        <Counter title="Minutos" number={minute} eventColor={eventColor} />
+        <Counter title="Segundos" number={second} eventColor={eventColor} />
       </div>
     </>
   );
