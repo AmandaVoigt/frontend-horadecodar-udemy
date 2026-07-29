@@ -45,8 +45,9 @@ const Home = () => {
         <label>
           <span>Data do evento:</span>
           <input
-            type="date"
+            type="datetime-local"
             name="date"
+            lang="pt-BR"
             onChange={(e) => setDate(e.target.value)}
             required
           />
