@@ -63,4 +63,9 @@ button {
   border-radius: 0.5rem;
   cursor: pointer;
   max-width: 200px;
+  margin: 20px;
+}
+
+form {
+  margin: 5px;
 }
