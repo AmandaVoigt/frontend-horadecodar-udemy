@@ -4,6 +4,7 @@ import HookUseState from "../components/HookUseState";
 import HookUseRef from "../components/HookUseRef";
 import HookUseCallback from "../components/HookUseCallback";
 import HookUseMemo from "../components/HookUseMemo";
+import HookUseLayoutEffect from "../components/HookUseLayoutEffect";
 
 import { useContext } from "react";
 import { SomeContext } from "../components/HookUseContext";
@@ -25,6 +26,7 @@ const Home = () => {
       <HookUseRef />
       <HookUseCallback />
       <HookUseMemo />
+      <HookUseLayoutEffect />
     </div>
   );
 };
