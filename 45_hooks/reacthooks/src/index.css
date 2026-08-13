@@ -65,7 +65,7 @@ button {
   border-radius: 0.5rem;
   cursor: pointer;
   max-width: 200px;
-  margin: 10px;
+  margin: 5px 0px 20px 0px;
 }
 
 form {
@@ -77,4 +77,8 @@ hr {
   height: 3px;
   border: none;
   background-color: #c532ff;
+}
+
+input {
+  margin: 15px 0px 15px 0px;
 }
