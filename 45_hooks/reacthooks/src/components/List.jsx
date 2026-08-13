@@ -6,7 +6,7 @@ const List = ({ getItems }) => {
   useEffect(() => {
     console.log("Buscando os dados no DB...");
 
-    setMyItems(getItems());
+    setMyItems(getItems(0));
   }, [getItems]);
 
   return (
