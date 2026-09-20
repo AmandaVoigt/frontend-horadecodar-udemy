@@ -6,10 +6,10 @@ app.use(cors());
 
 app.use(express.json());
 
-// // DB Connection
-// const conn = require("./db/conn");
+// DB Connection
+const conn = require("./db/conn");
 
-// conn();
+conn();
 
 // // Routes
 // const routes = require("./routes/router");
@@ -19,3 +19,4 @@ app.use(express.json());
 app.listen(3000, function () {
   console.log("Servidor Online!");
 });
+
