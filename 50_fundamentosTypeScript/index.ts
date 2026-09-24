@@ -9,3 +9,16 @@ const y: number = 15.5848;
 console.log(typeof y);
 console.log(y);
 console.log(y.toPrecision(3));
+
+// 2 - string
+const firstName: string = "Amanda";
+console.log(firstName.toUpperCase());
+
+let fullName: string;
+
+const lastName: string = "Voigt";
+
+fullName = firstName + " " + lastName;
+
+console.log(fullName);
+console.log(typeof fullName);
