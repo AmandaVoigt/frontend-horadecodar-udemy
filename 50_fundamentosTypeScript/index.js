@@ -22,3 +22,9 @@ console.log(a);
 console.log(typeof a);
 a = true;
 console.log(a);
+// 4 - inference e annotation
+const ann = "Teste";
+let inf = "Teste";
+// ann = 1
+// inf = 1
+console.log("Testando 2");
