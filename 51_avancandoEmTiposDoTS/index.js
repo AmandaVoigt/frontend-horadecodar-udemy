@@ -31,6 +31,19 @@ console.log(greeting("Matheus"));
 // 6 - funções anônimas
 setTimeout(function () {
     const sallary = 1000;
-    //   console.log(parseFloat(sallary)); - parseFloat = tem que ser string!
+    // console.log(parseFloat(sallary)); - parseFloat = tem que ser string!
     console.log(sallary);
 }, 2000);
+// 7 - tipos de objetos
+function passCoordinates(coord) {
+    console.log("X coordiantes: " + coord.x);
+    console.log("X coordiantes: " + coord.y);
+}
+const objCoord = { x: 329, y: 84.2 };
+passCoordinates(objCoord);
+// passCoordinates({ nome: 1, sobrenome: 2 }); - Não funciona desse jeito!
+const pessoaObj = {
+    nome: "Amanda",
+    surname: "Voigt",
+};
+console.log(pessoaObj);
