@@ -58,3 +58,12 @@ function showNumbers(a, b, c) {
 showNumbers(1, 2, 3);
 showNumbers(4, 5);
 // showNumbers(6); - Não funciana só com um número
+// 9 - validação de parâmetro opcional
+function advancedGreeting(firstName, lastName) {
+    if (lastName !== undefined) {
+        return `Olá, ${firstName} ${lastName}, tudo bem?`;
+    }
+    return `Olá, ${firstName}, tudo bem?`;
+}
+advancedGreeting("Amanda", "Voigt");
+advancedGreeting("Matheus");
