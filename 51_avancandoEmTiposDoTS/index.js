@@ -102,5 +102,14 @@ showCoords(coordObj);
 const somePerson = { name: "Amanda", age: 25 };
 console.log(somePerson);
 // type personType = {
-//     age: number
+//     age: number        - Não funciona!
 // }
+// 15 - literal types
+let test;
+test = "testando";
+console.log(test);
+function showDirection(direction) {
+    console.log(`A direção é: ${direction}`);
+}
+showDirection("left");
+// showDirection("top"); - Não funciona! a função só aceita 3 valores!

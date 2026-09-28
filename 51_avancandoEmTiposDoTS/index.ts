@@ -170,5 +170,21 @@ type personType = {
 };
 
 // type personType = {
-//     age: number
+//     age: number        - Não funciona!
 // }
+
+// 15 - literal types
+let test: "testando";
+
+test = "testando";
+
+console.log(test);
+
+function showDirection(direction: "left" | "right" | "center") {
+  console.log(`A direção é: ${direction}`);
+}
+
+showDirection("left");
+// showDirection("top"); - Não funciona! a função só aceita 3 valores!
+
+
