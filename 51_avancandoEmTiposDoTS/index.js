@@ -67,3 +67,11 @@ function advancedGreeting(firstName, lastName) {
 }
 advancedGreeting("Amanda", "Voigt");
 advancedGreeting("Matheus");
+// 10 - union type
+function showBalance(balance) {
+    console.log(`O saldo da conta é R$${balance}`);
+}
+showBalance(100);
+showBalance("500");
+// showBalance(true); - Não funciona por ser boolean
+const arr2 = [1, "teste", true];
