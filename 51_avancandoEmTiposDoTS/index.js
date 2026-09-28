@@ -116,3 +116,10 @@ showDirection("left");
 // 16 - non-null assertion
 const p = document.getElementById("some-p");
 console.log(p.innerText);
+// 17 - big int
+let n;
+// n = 1 - Tem que ser número de escala maior
+n = 1000n;
+console.log(n);
+console.log(typeof n);
+console.log(n + 100n);
