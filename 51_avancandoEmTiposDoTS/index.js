@@ -47,3 +47,14 @@ const pessoaObj = {
     surname: "Voigt",
 };
 console.log(pessoaObj);
+// 8 - propriedades opcionais
+function showNumbers(a, b, c) {
+    console.log("A: " + a);
+    console.log("B: " + b);
+    if (c) {
+        console.log("C: " + c);
+    }
+}
+showNumbers(1, 2, 3);
+showNumbers(4, 5);
+// showNumbers(6); - Não funciana só com um número
