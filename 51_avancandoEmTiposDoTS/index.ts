@@ -187,4 +187,7 @@ function showDirection(direction: "left" | "right" | "center") {
 showDirection("left");
 // showDirection("top"); - Não funciona! a função só aceita 3 valores!
 
+// 16 - non-null assertion
+const p = document.getElementById("some-p");
 
+console.log(p!.innerText);
