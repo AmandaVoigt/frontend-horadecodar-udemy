@@ -99,3 +99,8 @@ const coordObj = {
     z: 12,
 };
 showCoords(coordObj);
+const somePerson = { name: "Amanda", age: 25 };
+console.log(somePerson);
+// type personType = {
+//     age: number
+// }
