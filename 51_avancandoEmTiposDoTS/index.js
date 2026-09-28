@@ -90,3 +90,12 @@ function showId(id) {
 showId(1);
 showId("200");
 showId(123);
+function showCoords(obj) {
+    console.log(`x: ${obj.x}, y: ${obj.y}, z: ${obj.z}`);
+}
+const coordObj = {
+    x: 10,
+    y: 15,
+    z: 12,
+};
+showCoords(coordObj);
