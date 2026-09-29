@@ -6,11 +6,11 @@ interface Props {
   content: string;
   commentsQty: number;
   tags: string[];
-  // 8 - enum
+  // 7 - enum
   category: Category;
 }
 
-// 8 - enum
+// 7 - enum
 export enum Category {
   JS = "JavaScript",
   TS = "TypeScript",
